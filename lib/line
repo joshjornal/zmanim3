@@ -1,0 +1,9 @@
+Class MyCustomClipper extends CustomClipper<path> {
+    @override
+    Path getclip(Size size) {
+    var Path = path();
+    path.lineto(0,size.height);
+    path.lineto(size.width,size.height);
+    path.close();
+    return path;
+}}
