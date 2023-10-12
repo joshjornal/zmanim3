@@ -7,7 +7,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage(assets/images/espaco.jpeg))),
+            image: DecorationImage(image: AssetImage('assets/images/espaco.jpeg'),
+            fit: BoxFit.cover
+            )),
           child: SingleChildScrollView(
               child: Column(
       children: [
@@ -22,6 +24,7 @@ class HomePage extends StatelessWidget {
               )),
 
           Text('quinta-feira, 28 de setembro de 2023', style: TextStyle(color: Colors.blueGrey)),
+          Divider(color:Colors.white,endIndent:10),
           //MyCustomClipper.Path(8,8),//
           SizedBox(height: 24),
           Text('יג תשרי תשפ"ד', style: TextStyle(fontSize: 20)),
